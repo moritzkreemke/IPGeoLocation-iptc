@@ -9,15 +9,15 @@
 
 
 //https://www.gnu.org/software/libc/manual/html_node/Argp-Example-3.html
-const char *argp_program_version = "IP_Statistics Tool 1.0";
-static char doc[] = "A Simple "; // Program documentation.
+const char *argp_program_version = "iptc 0.9";
+static char doc[] = "A small CLI Tool to determine the Country of an IP-Address."; // Program documentation.
 static char args_doc[] = "[IP-Address|FILE]"; // A description of the arguments we accept.
 static struct argp_option options[] = {
 
-        {"reference",    'r', "asn-country-ipv4.csv",      OPTION_ARG_OPTIONAL,  "Specify a reference IPV4 Database File" },
-        {"follow",    'f', 0,      OPTION_ARG_OPTIONAL,  "If Input Stream defined it will update" },
-        {"statistics",    's', 0,      OPTION_ARG_OPTIONAL,  "Prints statistics" },
-        {"distinct",    'd', 0,      OPTION_ARG_OPTIONAL,  "Prints statistics" },
+        {"reference",    'r', "asn-country-ipv4.csv",      OPTION_ARG_OPTIONAL,  "Specify a reference IPV4 Database File for lookup" },
+        {"follow",    'f', 0,      OPTION_ARG_OPTIONAL,  "output appended data as the file grows" },
+        {"statistics",    's', 0,      OPTION_ARG_OPTIONAL,  "print summarized data for a group of ip-addresses" },
+        {"distinct",    'd', 0,      OPTION_ARG_OPTIONAL,  "don't print/count ip addresses twice" },
         { 0 }
 }; //The options we understand.
 
