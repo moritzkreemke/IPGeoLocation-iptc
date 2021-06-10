@@ -1,4 +1,5 @@
 # IPGeoLocation (iptc)
+[![CMake](https://github.com/Get-Smart1/IPGeoLocation-iptc/actions/workflows/cmake.yml/badge.svg)](https://github.com/Get-Smart1/IPGeoLocation-iptc/actions/workflows/cmake.yml)
 
 A small CLI Tool to determine the Country of an IP-Address.
 
